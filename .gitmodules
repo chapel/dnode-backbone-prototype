@@ -1,0 +1,12 @@
+[submodule "vendor/mauricemach/coffeekup"]
+	path = vendor/mauricemach/coffeekup
+	url = https://github.com/mauricemach/coffeekup.git
+[submodule "vendor/substack/dnode"]
+	path = vendor/substack/dnode
+	url = https://github.com/substack/dnode.git
+[submodule "vendor/cloudhead/less.js"]
+	path = vendor/cloudhead/less.js
+	url = https://github.com/cloudhead/less.js.git
+[submodule "vendor/jashkenas/coffee-script"]
+	path = vendor/jashkenas/coffee-script
+	url = https://github.com/jashkenas/coffee-script.git
