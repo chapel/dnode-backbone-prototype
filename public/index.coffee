@@ -13,10 +13,19 @@ html lang: 'en', ->
     script src: 'http://code.jquery.com/jquery-1.4.4.js', type: 'text/javascript'
     script src: '/dnode.js', type: 'text/javascript'
     script src: '/vendor/jashkenas/coffee-script/extras/coffee-script.js', type: 'text/javascript'
+    script src: 'http://documentcloud.github.com/underscore/underscore.js', type: 'text/javascript'
+    script src: 'http://documentcloud.github.com/backbone/backbone.js', type: 'text/javascript'
     
     script src: '/coffee/require.coffee', type: 'text/coffeescript'
     
     # client
     script src: '/coffee/client.coffee', type: 'text/coffeescript'
 
-  body -> 'nodehub'
+  body ->
+    div id: 'chatArea', ->
+      textarea id: 'chatHistory'
+      form method: 'post', action: '#', id: 'chatForm', name: 'newMessage', onsubmit: 'return false', ->
+        input name: 'newMessageString', type: 'text'
+        input type: 'submit', value: 'send'
+      a href: '#', id: 'refresh', -> 'Refresh'
+      

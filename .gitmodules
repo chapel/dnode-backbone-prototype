@@ -10,3 +10,6 @@
 [submodule "vendor/jashkenas/coffee-script"]
 	path = vendor/jashkenas/coffee-script
 	url = https://github.com/jashkenas/coffee-script.git
+[submodule "vendor/cloudhead/backbone"]
+	path = vendor/cloudhead/backbone
+	url = https://github.com/documentcloud/backbone.git
